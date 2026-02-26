@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Gallery | Education for All</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body style="background: var(--light);">
+
+    <header>
+        <div class="logo">
+            <h1>EDUCATION <span class="gradient-text">FOR ALL</span></h1>
+            <span>Learning Academy</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admission.html">Admissions</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="achievements.html">Success Stories</a></li>
+                <li><a href="faculty.html">Elite Faculty</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="admission.html" class="btn btn-primary">Join Today</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 10rem;">
+        <div class="container">
+            <div class="hero-content" style="text-align: center; margin-bottom: 6rem;">
+                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Life at the <span
+                        class="gradient-text">Academy</span></h1>
+                <p style="font-size: 1.25rem; color: var(--slate); max-width: 800px; margin: 0 auto;">A modern and
+                    interactive learning environment for students in Sukkur. <br>
+                    <span class="urdu" lang="ur">ہماری اکیڈمی کے شاندار نظارے اور تعلیمی ماحول</span>
+                </p>
+            </div>
+
+            <!-- Bento Styled Gallery with Overlapping items -->
+            <div
+                style="display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 250px; gap: 1.5rem; margin-bottom: 10rem;">
+                <!-- Item 1: Large Featured -->
+                <div class="glass-panel"
+                    style="grid-column: span 2; grid-row: span 2; overflow: hidden; position: relative;">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+                        alt="Excellence"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);"
+                        onmouseover="this.style.scale='1.1'" onmouseout="this.style.scale='1.0'">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: var(--white);">
+                        <h3>Interactive Classrooms</h3>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="glass-panel" style="grid-column: span 1; grid-row: span 1; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=400&q=80"
+                        alt="Study" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <!-- Item 3 -->
+                <div class="glass-panel" style="grid-column: span 1; grid-row: span 1; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1517245385169-d39139a470da?auto=format&fit=crop&w=400&q=80"
+                        alt="Workshops" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <!-- Item 4: Tall -->
+                <div class="glass-panel" style="grid-column: span 1; grid-row: span 2; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=400&q=1000"
+                        alt="Campus Life" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <!-- Item 5 -->
+                <div class="glass-panel" style="grid-column: span 1; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=400&q=80"
+                        alt="Achievement" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <!-- Item 6: Wide -->
+                <div class="glass-panel" style="grid-column: span 2; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1491843351663-8cbb19bb27f8?auto=format&fit=crop&w=800&q=80"
+                        alt="Resource Center" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom">
+            &copy; 2024 Education for All | Premium Academy
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

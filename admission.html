@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Admission | Education for All</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body
+    style="background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.05), transparent), radial-gradient(circle at bottom left, rgba(6, 182, 212, 0.05), transparent);">
+
+    <header>
+        <div class="logo">
+            <h1>EDUCATION <span class="gradient-text">FOR ALL</span></h1>
+            <span>Learning Academy</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admission.html" class="active">Admissions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="achievements.html">Success Stories</a></li>
+                <li><a href="faculty.html">Elite Faculty</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="index.html" class="btn btn-secondary"><i data-lucide="home"></i> Back Home</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 10rem;">
+        <div class="container" style="max-width: 900px;">
+            <div class="hero-content" style="text-align: center; margin-bottom: 4rem;">
+                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Candidate <span class="gradient-text">Portal</span>
+                </h1>
+                <p style="font-size: 1.2rem; color: var(--slate);">Your gateway to a stable and prestigious career
+                    starts here. <br>
+                    <span class="urdu" lang="ur">امیدوار کا داخلہ پورٹل - آج ہی ایک بہتر مستقبل کے لیے رجسٹر ہوں</span>
+                </p>
+            </div>
+
+            <!-- Modern Form Container with Glassmorphism -->
+            <div class="glass-panel"
+                style="padding: 4rem; box-shadow: var(--shadow-xl); background: rgba(255, 255, 255, 0.85); margin-bottom: 6rem;">
+                <form id="modern-admission-form" style="display: grid; gap: 2.5rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="form-group" style="display: grid; gap: 0.8rem;">
+                            <label style="font-weight: 700; color: var(--dark);">Full Name <span class="urdu"
+                                    lang="ur">(نام)</span></label>
+                            <input type="text" placeholder="John Doe"
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 1px solid rgba(0,0,0,0.1); background: var(--white); outline-color: var(--primary);"
+                                required>
+                        </div>
+                        <div class="form-group" style="display: grid; gap: 0.8rem;">
+                            <label style="font-weight: 700; color: var(--dark);">Father's Name <span class="urdu"
+                                    lang="ur">(ولدیت)</span></label>
+                            <input type="text" placeholder="Jane Doe"
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 1px solid rgba(0,0,0,0.1); background: var(--white); outline-color: var(--primary);"
+                                required>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="form-group" style="display: grid; gap: 0.8rem;">
+                            <label style="font-weight: 700; color: var(--dark);">Candidate CNIC <span class="urdu"
+                                    lang="ur">(شناختی کارڈ)</span></label>
+                            <input type="text" placeholder="45203-xxxxxxx-x"
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 1px solid rgba(0,0,0,0.1); background: var(--white); outline-color: var(--primary);"
+                                required>
+                        </div>
+                        <div class="form-group" style="display: grid; gap: 0.8rem;">
+                            <label style="font-weight: 700; color: var(--dark);">Phone Number <span class="urdu"
+                                    lang="ur">(نمبر)</span></label>
+                            <input type="tel" placeholder="+92 300 1234567"
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 1px solid rgba(0,0,0,0.1); background: var(--white); outline-color: var(--primary);"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: grid; gap: 0.8rem;">
+                        <label style="font-weight: 700; color: var(--dark);">Select Preparation Track <span class="urdu"
+                                lang="ur">(تیاری کے کورس کا انتخاب کریں)</span></label>
+                        <select
+                            style="padding: 1rem; border-radius: var(--radius-md); border: 1px solid rgba(0,0,0,0.1); background: var(--white); outline-color: var(--primary);"
+                            required>
+                            <option value="">-- Choose Course --</option>
+                            <option value="jst">JST/PST Excellence - PKR 5,000</option>
+                            <option value="bps">BPS 5-15 Screening - PKR 3,000</option>
+                            <option value="base">General Foundation - PKR 2,000</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="display: grid; gap: 0.8rem;">
+                        <label style="font-weight: 700; color: var(--dark);">Educational Background <span class="urdu"
+                                lang="ur">(تعلیمی پس منظر)</span></label>
+                        <textarea rows="4" placeholder="Your previous degrees and universities..."
+                            style="padding: 1rem; border-radius: var(--radius-md); border: 1px solid rgba(0,0,0,0.1); background: var(--white); outline-color: var(--primary); font-family: inherit;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary"
+                        style="padding: 1.5rem; justify-content: center; font-size: 1.2rem; margin-top: 1rem;">
+                        Submit Registration <i data-lucide="send"></i>
+                    </button>
+                    <p class="urdu" lang="ur"
+                        style="text-align: center; font-size: 1rem; color: var(--slate); margin-top: 1rem; opacity: 0.7;">
+                        اپنی رجسٹریشن کے لیے فارم جمع کرائیں - ہمارا نمائندہ آپ سے جلد رابطہ کرے گا-</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                &copy; 2024 Education for All | Premium Academy
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('modern-admission-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Success! Admission registered.');
+        });
+    </script>
+</body>
+
+</html>
